@@ -15,6 +15,10 @@
 		60C595941EA8D1BB00886597 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60C595921EA8D1BB00886597 /* LaunchScreen.storyboard */; };
 		60C5959F1EA8D1BB00886597 /* WSCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C5959E1EA8D1BB00886597 /* WSCalendarTests.m */; };
 		60C595AA1EA8D1BB00886597 /* WSCalendarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C595A91EA8D1BB00886597 /* WSCalendarUITests.m */; };
+		60C595BF1EA8D1E000886597 /* WSCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60C595B81EA8D1E000886597 /* WSCalendarView.xib */; };
+		60C595C01EA8D1E000886597 /* WSCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C595BA1EA8D1E000886597 /* WSCalendarView.m */; };
+		60C595C11EA8D1E000886597 /* WSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C595BC1EA8D1E000886597 /* WSLabel.m */; };
+		60C595C21EA8D1E000886597 /* WSEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C595BE1EA8D1E000886597 /* WSEventView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		60C595A51EA8D1BB00886597 /* WSCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WSCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60C595A91EA8D1BB00886597 /* WSCalendarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSCalendarUITests.m; sourceTree = "<group>"; };
 		60C595AB1EA8D1BB00886597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60C595B81EA8D1E000886597 /* WSCalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSCalendarView.xib; sourceTree = "<group>"; };
+		60C595B91EA8D1E000886597 /* WSCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSCalendarView.h; sourceTree = "<group>"; };
+		60C595BA1EA8D1E000886597 /* WSCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSCalendarView.m; sourceTree = "<group>"; };
+		60C595BB1EA8D1E000886597 /* WSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSLabel.h; sourceTree = "<group>"; };
+		60C595BC1EA8D1E000886597 /* WSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSLabel.m; sourceTree = "<group>"; };
+		60C595BD1EA8D1E000886597 /* WSEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSEventView.h; sourceTree = "<group>"; };
+		60C595BE1EA8D1E000886597 /* WSEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSEventView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +112,7 @@
 		60C595831EA8D1B900886597 /* WSCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				60C595B71EA8D1CB00886597 /* WSCalendarView */,
 				60C595871EA8D1B900886597 /* AppDelegate.h */,
 				60C595881EA8D1B900886597 /* AppDelegate.m */,
 				60C5958A1EA8D1BA00886597 /* ViewController.h */,
@@ -138,6 +150,20 @@
 				60C595AB1EA8D1BB00886597 /* Info.plist */,
 			);
 			path = WSCalendarUITests;
+			sourceTree = "<group>";
+		};
+		60C595B71EA8D1CB00886597 /* WSCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				60C595B81EA8D1E000886597 /* WSCalendarView.xib */,
+				60C595B91EA8D1E000886597 /* WSCalendarView.h */,
+				60C595BA1EA8D1E000886597 /* WSCalendarView.m */,
+				60C595BB1EA8D1E000886597 /* WSLabel.h */,
+				60C595BC1EA8D1E000886597 /* WSLabel.m */,
+				60C595BD1EA8D1E000886597 /* WSEventView.h */,
+				60C595BE1EA8D1E000886597 /* WSEventView.m */,
+			);
+			name = WSCalendarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +274,7 @@
 			files = (
 				60C595941EA8D1BB00886597 /* LaunchScreen.storyboard in Resources */,
 				60C595911EA8D1BB00886597 /* Assets.xcassets in Resources */,
+				60C595BF1EA8D1E000886597 /* WSCalendarView.xib in Resources */,
 				60C5958F1EA8D1BB00886597 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +302,10 @@
 			files = (
 				60C5958C1EA8D1BA00886597 /* ViewController.m in Sources */,
 				60C595891EA8D1B900886597 /* AppDelegate.m in Sources */,
+				60C595C01EA8D1E000886597 /* WSCalendarView.m in Sources */,
 				60C595861EA8D1B900886597 /* main.m in Sources */,
+				60C595C11EA8D1E000886597 /* WSLabel.m in Sources */,
+				60C595C21EA8D1E000886597 /* WSEventView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +537,7 @@
 				60C595B01EA8D1BB00886597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60C595B11EA8D1BB00886597 /* Build configuration list for PBXNativeTarget "WSCalendarTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +546,7 @@
 				60C595B31EA8D1BB00886597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60C595B41EA8D1BB00886597 /* Build configuration list for PBXNativeTarget "WSCalendarUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +555,7 @@
 				60C595B61EA8D1BB00886597 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

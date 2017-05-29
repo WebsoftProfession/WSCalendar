@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WSCalendarView.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<WSCalendarViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UITextField *txtCalender;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
 
 @end
 
